@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数独 Sudoku · helloword_sleep</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="sudoku.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../index.html" class="brand">helloword_sleep</a>
+      <div class="nav-right">
+        <a href="../playground.html" class="back-link">← Playground</a>
+        <button class="theme-toggle" aria-label="切换明暗">🌓</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <h1>数独 Sudoku</h1>
+    <p class="muted">点格子选中，用下方键盘填数字（填错实时标红）。想给空格做候选小标记，点「草稿」切换到草稿键盘。做完点「检查」。</p>
+
+    <div class="controls">
+      <label>难度
+        <select id="difficulty">
+          <option value="easy">简单</option>
+          <option value="medium" selected>中等</option>
+          <option value="hard">困难</option>
+        </select>
+      </label>
+      <button class="btn-sm" id="newBtn">新游戏</button>
+      <button class="btn-sm" id="checkBtn">检查</button>
+      <button class="btn-sm" id="hintBtn">提示</button>
+      <button class="btn-sm" id="solveBtn">解题</button>
+      <button class="btn-sm" id="clearBtn">清除</button>
+      <button class="btn-sm" id="pauseBtn">暂停</button>
+      <button class="btn-sm" id="draftBtn">草稿</button>
+    </div>
+
+    <p class="status">⏱ <span id="timer">00:00</span> &nbsp;·&nbsp; ❌ 错误 <span id="mistakes">0</span> &nbsp;·&nbsp; □ 剩余 <span id="remain">0</span></p>
+
+    <div class="board-wrap">
+      <div id="grid" aria-label="数独棋盘"></div>
+      <div id="pauseMask" class="pauseMask" title="点击继续">
+        <div class="pause-title">已暂停</div>
+        <div class="pause-sub">点击任意处继续</div>
+      </div>
+    </div>
+    <div id="padFill" class="pad"></div>
+    <div id="padDraft" class="pad" style="display:none"></div>
+    <p id="msg" class="msg"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> helloword_sleep</div>
+  </footer>
+
+  <script src="../js/site.js"></script>
+  <script src="sudoku.js"></script>
+</body>
+</html>

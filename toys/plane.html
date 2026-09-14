@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寻机头 猜飞机 · helloword_sleep</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="plane.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../playground.html" class="brand">helloword_sleep</a>
+      <div class="nav-right">
+        <a href="../playground.html" class="back-link">← Playground</a>
+        <button class="theme-toggle" aria-label="切换明暗">🌓</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <h1>寻机头 · 猜飞机</h1>
+    <p class="muted">电脑在 10×10 棋盘藏了 2 架飞机（机头红色、机身蓝色）。每局从 3 款造型里随机抽 2 款、各自随机朝向。逐格点击侦察，找到全部 2 个机头就赢。点错只会显示灰色空地。</p>
+
+    <div class="legend-wrap">
+      <p class="legend-title">机型预览 · 每局随机藏其中 2 款</p>
+      <div id="legend" class="plane-legend"></div>
+    </div>
+
+    <div class="controls">
+      <button class="btn-sm" id="newBtn">新游戏</button>
+    </div>
+
+    <p class="status">
+      👣 步数 <span id="steps">0</span>
+      &nbsp;·&nbsp; 🏆 最佳 <span id="best">—</span>
+      &nbsp;·&nbsp; 🎯 机头 <span id="heads">0</span>/<span id="total">2</span>
+    </p>
+
+    <div class="board-wrap">
+      <div id="grid" class="plane-grid" aria-label="游戏棋盘"></div>
+    </div>
+
+    <p id="msg" class="msg"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> helloword_sleep</div>
+  </footer>
+
+  <script src="../js/site.js"></script>
+  <script src="plane.js"></script>
+</body>
+</html>

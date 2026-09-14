@@ -11,6 +11,8 @@
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
   --radius: 12px;
   --maxw: 960px;
+  --given-bg: #eef2f7;          /* 题板/给定格底色（浅灰，区别于空白与自填） */
+  --accent-soft: rgba(99,102,241,0.18); /* 选中格的浅色底 */
 }
 
 [data-theme="dark"] {
@@ -22,6 +24,8 @@
   --accent: #818cf8;
   --accent-hover: #a5b4fc;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --given-bg: #16213a;          /* 暗色下题板底色（深蓝灰） */
+  --accent-soft: rgba(129,140,248,0.22);
 }
 
 /* ===== 基础重置 ===== */
