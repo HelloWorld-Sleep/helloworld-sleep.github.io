@@ -1,0 +1,6 @@
+# 本地 AI 助手的工作数据，不随网站发布
+.workbuddy-ai/
+
+# 系统 / 编辑器杂项
+.DS_Store
+Thumbs.db
