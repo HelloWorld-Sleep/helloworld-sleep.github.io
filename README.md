@@ -1,6 +1,6 @@
 # HelloWorld-Sleep
 
-一个「作品集 + 小游戏」合体的个人站。用纯 HTML / CSS / JavaScript 写成，托管在 GitHub Pages 上。主要给同行、招聘方，和爱鼓捣的人看。
+一个「作品集 + 小游戏」合体的个人站。用纯 HTML / CSS / JavaScript 写成，托管在 GitHub Pages 上。主要爱鼓捣的人看。
 
 ## 技术栈
 
@@ -34,8 +34,8 @@ python -m http.server 8000
 
 ## 在线访问
 
-- 网站地址：（部署 GitHub Pages 后补上）
-- 仓库地址：（建仓后补上）
+- 网站地址：https://helloworld-sleep.github.io/
+- 仓库地址：https://github.com/HelloWorld-Sleep/helloworld-sleep.github.io
 
 ## 更多
 
